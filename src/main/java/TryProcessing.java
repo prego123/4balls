@@ -5,9 +5,12 @@ public class TryProcessing extends PApplet {
     public static final int WIDTH = 648;
     public static final int HEIGHT = 488;
     public static final int DIAMETER = 10;
+    public static DrawFigureStrategy obj;
 
     public static void main(String args[]){
+
         PApplet.main("TryProcessing", args);
+        obj = new DrawCircleStrategy();
     }
 
     @Override
@@ -22,8 +25,6 @@ public class TryProcessing extends PApplet {
 
     @Override
     public void draw(){
-        DrawFigureStrategy obj = new DrawCircleStrategy();
-        System.out.println(1);
         obj.drawFigure(WIDTH, HEIGHT, DIAMETER);
     }
 
