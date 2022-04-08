@@ -1,5 +1,8 @@
+import processing.core.PApplet;
+
 interface DrawFigureStrategy {
-    void drawFigure(int WIDTH, int HEIGHT, int DIAMETER);
+    void move();
+    void drawFigure(PApplet p);
 }
 
 
